@@ -23,25 +23,42 @@ st.set_page_config(
 # -----------------------------
 st.markdown("""
     <style>
+        header {visibility: hidden;}
+        .block-container {
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+        }
+
         body {
             background-color: #f4f6f9;
         }
+
         .main {
             background-color: white;
             border-radius: 20px;
             padding: 40px;
             box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
         }
+
         h1, h2, h3 {
             color: #1f4172;
         }
+
         .stButton button {
             background-color: #1f4172;
             color: white;
             border-radius: 10px;
             height: 3em;
             width: 100%;
+            border: none;
+            transition: 0.3s ease;
         }
+
+        .stButton button:hover {
+            background-color: #2c5aa0;
+            transform: scale(1.02);
+        }
+
         .prediction {
             font-size: 22px;
             font-weight: 600;
@@ -130,3 +147,4 @@ if st.button("🔮 Predict Purchase Probability"):
         st.markdown(f"<div class='prediction'>❌ **Prediction:** Unlikely to make a purchase<br>💡 Probability: {probability:.2%}</div>", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
+
