@@ -94,9 +94,3 @@ streamlit run app.py
 ├── requirements.txt
 └── README.md
 
-
-
----
-
-Would you like me to add a **"Live Demo" badge** and a section that links to your **Streamlit deployed app** once you upload it online?  
-That’ll make your README look even more professional and portfolio-ready.
